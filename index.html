@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess GAME</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>GAME OF INTELLIGENCE</h1>
+    <h1>CHESS</h1>
+
+    <div class="controls">
+        <button class="start" id="startBtn">Start</button>
+        <p id="statusText">Press start to begin. White moves first.</p>
+    </div>
+
+    <div class="game">
+        <div class="side-panel" id="leftPanel">
+            <h3>Captured by White</h3>
+            <div class="captured-list" id="capturedByWhite"></div>
+        </div>
+
+        <div class="board" id="board"></div>
+
+        <div class="side-panel" id="rightPanel">
+            <h3>Captured by Black</h3>
+            <div class="captured-list" id="capturedByBlack"></div>
+            <h3>Moves</h3>
+            <ol class="move-history" id="moveHistory"></ol>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="promoModal">
+        <div class="modal-box">
+            <p>Promote pawn to:</p>
+            <div class="promo-choices" id="promoChoices"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
